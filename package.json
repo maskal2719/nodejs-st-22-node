@@ -1,0 +1,21 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task2": "nodemon task2.2.js"
+    
+  },
+  "keywords": [],
+  "author": "Maskalenka Stanislau",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
