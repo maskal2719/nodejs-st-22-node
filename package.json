@@ -11,7 +11,7 @@
     "build": "babel src -d dist --presets es2015"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maskalenka Stanislau",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.6",
