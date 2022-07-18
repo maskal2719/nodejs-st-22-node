@@ -1,11 +1,11 @@
-const csv = require('csvtojson');
-const fs = require('fs')
+var csv = require('csvtojson');
+var fs = require('fs')
 
-const csvFilePath = './csv/ex1.csv';
-const txtFilePath = 'result.txt';
+var csvFilePath = './csv/ex1.csv';
+var txtFilePath = 'result.txt';
 
-const readStream = fs.createReadStream(csvFilePath);
-const writeStream = fs.createWriteStream(txtFilePath);
+var readStream = fs.createReadStream(csvFilePath);
+var writeStream = fs.createWriteStream(txtFilePath);
 
 readStream
     .pipe(csv({
@@ -14,6 +14,6 @@ readStream
         colParser:{amount:'number', price: 'number'}, noheader: false, headers:['book','author','amount','price']}))
     .pipe(writeStream);
 
-    readStream.on('error', error => {
-        console.log(error.message)
-    });
+readStream.on('error', error => {
+    console.log(error.message)
+});
