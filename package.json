@@ -9,7 +9,7 @@
     "task1": "nodemon ./src/task2.1.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maskalenka Stanislau",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.19"
