@@ -4,9 +4,6 @@ const fs = require('fs')
 const csvFilePath = './csv/ex1.csv';
 const txtFilePath = 'result.txt';
 
-const columnNumbers = ['amount', 'price'];
-
-
 const readStream = fs.createReadStream(csvFilePath);
 const writeStream = fs.createWriteStream(txtFilePath);
 
